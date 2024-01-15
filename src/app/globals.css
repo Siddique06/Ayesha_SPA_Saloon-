@@ -1,27 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gazpacho:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root { 
+  /* Here we can create variables */
+  --foreground-rgb: #F2DCF2;
+ 
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
+  background: var(--foreground-rgb);
+  
 }
+/* Add this to your existing Tailwind CSS file or create a separate stylesheet */
+
+.rating {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  color: #a53ea8;
+  font-size: 2rem;
+  
+  
+}
+
+.rating2 {
+   display: inline-block;
+  position: relative;
+  width: 1.1em; 
+  
+}
+
+/* .rating span:hover:before,
+.rating span:hover ~ span:before {
+  content: '\2605';
+  position: absolute;
+  color: gold;
+} */
+
+.rating input {
+  display: none;
+}
+
+
